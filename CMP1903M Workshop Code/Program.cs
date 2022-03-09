@@ -6,58 +6,23 @@ namespace CMP1903MWorkshopCode
     {
         static void Main(string[] args)
         {
-            //Week 2
-            //EITHER:
-            //Read in the text file if you want (or are able) [HINT: read into a list of strings]
-            //Split the first four numbers
-            List<string> streets = new List<string>();
+            //Week 3
+            //Challenge: Get the message from the encrypted text
+            //
+            //1. EITHER:    Read in the .txt file into a List of Strings (or anything else?)
+            //   OR:        Read in each line one at a timen and get its maximum character 
+            //2. For each string:
+            //      Count each character in the string
+            //      The maximum is the character
+            //3. Output the unencrypted message.
 
+            //Week 3
+            //Task 1: create Message object, call the readTextFromInput() method
+            //Task 2: create Atbash object Step 1: pass message to encode() method Step 2: put in the encode logic
+            //Task 3: put in the decode logic to the decode() method, check if it works
+            //Task 4: read text to encode from a file
 
-
-            //OR:
-            //Manual (check each street code individually without reading them in automatically)
-            //long, tedious, etc, etc
-            //7778[8] is a correct street code
-            //Second two variables here are to use when calculating the checksum
-            int streetCode = 7778;
-            int checkSum = 8;
-            int total = 1;
-            int total2 = 0;
           
-
-            //Multiply all the numbers together in the 4 digit code (7*7*7*8)
-            //Can do it by using the mod '%' operator and the divide '/' operator
-            //Reduce streetCode by 1 digit each time through the loop
-            while(streetCode > 0)
-            {
-                
-
-            }
-
-
-            //Add the digits of the multiplication total together
-            //infinite loop until the total gets to one digit - the checksum
-            //Use 'break;' to break out of the loop
-            while (true)
-            {
-                //Do the same as above, adding not multiplying
-                while (total > 0)
-                {
-                    
-
-                }
-
-                //Check if total2 is 2 digits or more
-                //If not, break out of the loop
-                if (total2 > 9) 
-                { 
-                    
-                }
-                else { break; }
-            }
-  
-            //Check if the final checksum is the same as the checksum in the street code.
-            
 
         }
     }
