@@ -6,25 +6,28 @@ namespace CMP1903MWorkshopCode
     {
         static void Main(string[] args)
         {
-            //Week 5
-            //Challenge: What are the valid pass phrases?
+            //Week 6
+            //Challenge: What are the valid barcode numbers on passenger's tickets?
             //
 
 
 
-            //Week 5
-            //Task 1: Add a page to the 'history'
-            //Task 2: Add exceptions
-            //Task 3: Use custom exceptions
+            //Week 6
+            //Task 1: Using a List object
+            //List called 'names' to hold a list of names
+            List<string> names = new List<string>();
+            //Check to see if some names are in the list...?
+            //Create a simple search method to check if a name is in the list - don't use LINQ!
+                //What about a simple sequential search (check each name in turn)
+            //Add the names in the workshop task sheet to the list
+            //Use 'Add()' or a list initialiser (List<string> names = new List<string>(){"Olivia", "Oliver", "etc"};)
 
-            //example of creating a page with a title and URL
-            //Test... remove this when you have seen it working
-            Page p = new Page("Test Page", "http://www.lincoln.ac.uk");
-            Console.WriteLine(p.Address);
-            //.......
 
-            //creating a new, empty history
-            History h1 = new History();
+            //Task 2: Use a class to hold your List
+            //Task 3: Create a 'Wait' class to hold a Queue<> collection
+            //Task 4: Use LINQ queries on your collection
+
+
 
 
         }
