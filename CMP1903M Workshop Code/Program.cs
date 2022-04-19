@@ -6,26 +6,36 @@ namespace CMP1903MWorkshopCode
     {
         static void Main(string[] args)
         {
-            //Week 6
-            //Challenge: What are the valid barcode numbers on passenger's tickets?
+            //Week 7
+            //Challenge: Find the train station gate passcodes
             //
 
+            //Week 7
+            //Detached = 1, semi = 2, terrace = 3, unknown = 4
+            List<House> houses = new List<House>();
+            houses.Add(new House(1, "1, The Street, Lincoln, Lincolnshire, LN1 0AB", 100000, 4, true, 2));
+            houses.Add(new House(2, "5, The Street, Lincoln, Lincolnshire, LN1 0AB", 130000, 4, true, 1));
 
+            foreach (House h in houses)
+            {
+                Console.WriteLine($"Address: {h.Address}");
+                Console.WriteLine($"Value: {h.Value}");
+                Console.WriteLine($"Type of Property: {h.propertyType}");
+                Console.WriteLine();
+            }
 
-            //Week 6
-            //Task 1: Using a List object
-            //List called 'names' to hold a list of names
-            List<string> names = new List<string>();
-            //Check to see if some names are in the list...?
-            //Create a simple search method to check if a name is in the list - don't use LINQ!
-                //What about a simple sequential search (check each name in turn)
-            //Add the names in the workshop task sheet to the list
-            //Use 'Add()' or a list initialiser (List<string> names = new List<string>(){"Olivia", "Oliver", "etc"};)
+            var result = from h in houses
+                         where h.propertyType == Enums.PType.SemiDetached
+                         select h;
 
+            foreach (House h in result)
+            {
+                Console.WriteLine($"Address: {h.Address}");
+                Console.WriteLine($"Value: {h.Value}");
+                Console.WriteLine($"Type of Property: {h.propertyType}");
+                Console.WriteLine();
+            }
 
-            //Task 2: Use a class to hold your List
-            //Task 3: Create a 'Wait' class to hold a Queue<> collection
-            //Task 4: Use LINQ queries on your collection
 
 
 
